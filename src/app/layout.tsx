@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto, Patrick_Hand } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"], variable: '--font-roboto'});
+export const patrickHand = Patrick_Hand({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: '--font-patrick-hand'
+});
 
 export const metadata: Metadata = {
   title: "Psicóloga Libní",
   description: "Página profesional de Libní Gonzaléz.",
-
 };
 
 export default function RootLayout({
@@ -22,7 +26,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/icon.ico" sizes="any" />
       </Head>
-      <body className={inter.className}>
+      <body className={`${roboto.variable} ${patrickHand.variable}`}>
         <Navbar />
         {children}
       </body>
