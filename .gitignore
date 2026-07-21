@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# todo file
+TODO.md
+
+#git ignore
+.gitignore
