@@ -4,11 +4,15 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"], variable: '--font-roboto'});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-roboto",
+});
 const patrickHand = Patrick_Hand({
   subsets: ["latin"],
   weight: ["400"],
-  variable: '--font-patrick-hand'
+  variable: "--font-patrick-hand",
 });
 
 export const metadata: Metadata = {
