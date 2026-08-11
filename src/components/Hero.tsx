@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="w-full h-screen bg-gradient-to-b flex flex-col lg:flex-row lg:justify-center items-center gap-20 pt-24 lg:pt-0 p-8 lg:p-0"
+      className="w-full h-screen flex flex-col lg:flex-row lg:justify-center items-center gap-20 pt-24 lg:pt-0 p-8 lg:p-0"
       id="hero"
     >
       <div className="bg-slate-500 px-8 xl:px-12 hero-shadow">
