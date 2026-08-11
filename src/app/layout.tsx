@@ -31,6 +31,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon.ico" sizes="any" />
       </Head>
       <body className={`${roboto.variable} ${patrickHand.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>

@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
@@ -46,12 +47,12 @@ export default function Navbar() {
 
   const handleClick = (id: string, index: number) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "end" });
     setSelectedSection(index);
   };
 
   return (
-    <div className="w-full bg-opacity-1 bg-white absolute top-0 text-black flex justify-between items-center px-8 py-4">
+    <div className="w-full bg-opacity-1 bg-white fixed text-black flex justify-between items-center px-8 py-4">
       <div className="bg-[url('/assets/logo.png')] bg-cover bg-center w-10 h-10"></div>
       <div>
         <ul className="flex gap-4 md:gap-20 justify-end">
