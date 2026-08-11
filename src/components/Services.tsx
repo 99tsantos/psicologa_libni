@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full h-screen flex flex-col lg:flex-row lg:justify-center items-center gap-20 pt-24 lg:pt-0 p-8 lg:p-0"
+      className="w-full h-screen flex flex-col-reverse lg:flex-row lg:justify-center items-center gap-8 px-8 lg:px-0"
     >
       <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8">
         <h1 className="text-4xl lg:text-8xl text-local-navy font-patrick">

@@ -1,10 +1,9 @@
-"use client";
 import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
   { id: "hero", label: "Hola!" },
   { id: "services", label: "Servicios" },
-  { id: "aboutme", label: "Sobre mí" },
+  { id: "about-me", label: "Sobre mí" },
   { id: "information", label: "Contactos" },
 ];
 
@@ -52,14 +51,14 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full bg-opacity-1 bg-white fixed text-black flex justify-between px-8 py-4">
+    <div className="w-full bg-opacity-1 bg-white absolute top-0 text-black flex justify-between items-center px-8 py-4">
       <div className="bg-[url('/assets/logo.png')] bg-cover bg-center w-10 h-10"></div>
       <div>
         <ul className="flex gap-4 md:gap-20 justify-end">
           {NAV_ITEMS.map((item, i) => (
             <li
               key={item.id}
-              className={`cursor-pointer font-patrick text-2xl ${
+              className={`cursor-pointer font-patrick text-md lg:text-2xl ${
                 selectedSection === i ? "font-bold" : "font-normal"
               }`}
               onClick={() => handleClick(item.id, i)}

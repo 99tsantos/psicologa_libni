@@ -10,12 +10,12 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   return (
-    <main className="w-full">
+    <main className="w-full pt-24 lg:pt-0 relative">
       <Navbar />
       <Hero />
       <Services />
-      {/* <AboutMe />
-      <ContactMe /> */}
+      <AboutMe />
+      {/* <ContactMe /> */}
     </main>
   );
 }
