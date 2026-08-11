@@ -16,17 +16,23 @@
 
 @layer utilities {
   .hero-shadow {
-    box-shadow: -6rem 6rem 0px rgba(206, 180, 148, 0.495);
+    box-shadow: -6rem 6rem 0px rgba(206, 180, 148, 0.3);
   }
   .services-shadow {
-    box-shadow: 6rem -6rem 0px rgba(206, 180, 148, 0.495);
+    box-shadow: 6rem -6rem 0px rgba(206, 180, 148, 0.3);
+  }
+  .about-shadow {
+    box-shadow: -8rem 8rem 0px rgba(206, 180, 148, 0.3);
   }
   @media (max-width: 1280px) {
     .hero-shadow {
-      box-shadow: -3rem 3rem 0px rgba(206, 180, 148, 0.495);
+      box-shadow: -3rem 3rem 0px rgba(206, 180, 148, 0.3);
     }
     .services-shadow {
-      box-shadow: 3rem -3rem 0px rgba(206, 180, 148, 0.495);
+      box-shadow: 3rem -3rem 0px rgba(206, 180, 148, 0.3);
+    }
+    .about-shadow {
+      box-shadow: -4rem 4rem 0px rgba(206, 180, 148, 0.3);
     }
   }
 }
