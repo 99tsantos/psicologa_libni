@@ -46,8 +46,13 @@ export default function Navbar() {
   }, []);
 
   const handleClick = (id: string, index: number) => {
+    const windowWidth = window.innerWidth;
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "end" });
+    if (el)
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: windowWidth < 1024 ? "start" : "end",
+      });
     setSelectedSection(index);
   };
 
