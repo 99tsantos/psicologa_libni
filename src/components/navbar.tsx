@@ -4,7 +4,7 @@ const NAV_ITEMS = [
   { id: "hero", label: "Hola!" },
   { id: "services", label: "Servicios" },
   { id: "about-me", label: "Sobre mí" },
-  { id: "information", label: "Contactos" },
+  { id: "contact-me", label: "Contactos" },
 ];
 
 export default function Navbar() {
