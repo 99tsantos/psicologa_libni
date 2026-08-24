@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "Psicóloga Libní",
+    "description": "Página profesional de Libní Gonzaléz."
+  },
+  "navbar": {
+    "home": "Hola!",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "contact": "Contactos",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación"
+  },
+  "theme": { "light": "Activar modo claro", "dark": "Activar modo oscuro" },
+  "language": {
+    "label": "Cambiar idioma",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  },
+  "hero": {
+    "imageTitle": "Psicóloga Libní Gonzaléz",
+    "title": "Hola! Soy Libní Gonzaléz",
+    "welcome": "Bienvenidos!",
+    "intro": "Soy Psicóloga clínica, egresada de la Universidad Mariano Gálvez de Guatemala. Con garantía de calidad profesional autorizada por el Colegio de Psicólogos de Guatemala. Cuento con formación y acreditaciones académicas en Neuropsicología.",
+    "therapy": "En mi consulta encontrarás asesoramiento y terapia psicológica para una variedad de dificultades y problemas psicológicos.",
+    "license": "Mi colegiado activo : 14470."
+  },
+  "services": {
+    "title": "Servicios",
+    "imageTitle": "Servicios",
+    "subtitle": "Asesoramiento y Terapia psicológica - Virtual",
+    "intro": "Con el objetivo de ayudarte a superar tus problemas y lograr una vida más plena y satisfactoria, realizaremos un tratamiento personalizado y adaptado a tus necesidades, partiendo siempre de una base de confianza, respeto y confidencialidad.",
+    "method": "En mi práctica profesional empleo una metodología integradora, lo cual permite maximizar la eficacia de la terapia y realizar una intervención adaptada a las necesidades y características particulares de cada caso."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "imageTitle": "Psicóloga Libní Gonzaléz",
+    "background": "Me considero una persona en constante búsqueda de conocimiento, apasionada por el proceso de comprender el funcionamiento de diversas disciplinas. Tengo un profundo interés en la ciencia y el arte, lo que me lleva a involucrarme regularmente en actividades que integran ambos campos.",
+    "interest": "Mi principal interés en el ámbito de la psicología ha sido siempre la comprensión profunda y el tratamiento eficaz de los diversos problemas y trastornos psicológicos."
+  },
+  "contact": {
+    "title": "¿Agendamos una cita?",
+    "contactMe": "Contáctame",
+    "hours": "Horarios",
+    "rates": "Tarifas",
+    "weekdays": "Lunes a Viernes 16:00 a 20:00 PM",
+    "saturday": "Sábados 10:00 a 12:00 PM",
+    "individual": "Sesión Individual: Q150.00 / USD 20.00",
+    "package4": "Paquete de 4 sesiones: Q550.00 / USD 75.00",
+    "package6": "Paquete de 6 sesiones: Q800.00 / USD 105.00",
+    "package10": "Paquete de 10 sesiones: Q1,200.00 / USD 155.00",
+    "footer": [
+      "Pago solamente por transferencia.",
+      "Tiempo de terapia de 45 min - 1 hr",
+      "Desde cualquier parte y a la comodidad de tu casa, podemos iniciar una terapia a distancia."
+    ]
+  }
+}

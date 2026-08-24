@@ -3,10 +3,12 @@
 import { useEffect, useState } from "react";
 import MoonIcon from "./icons/MoonIcon";
 import SunIcon from "./icons/SunIcon";
+import { useTranslations } from "next-intl";
 
 const THEME_STORAGE_KEY = "theme";
 
 export default function ThemeToggle() {
+  const t = useTranslations("theme");
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function ThemeToggle() {
   return (
     <button
       type="button"
-      aria-label={isDark ? "Activar modo claro" : "Activar modo oscuro"}
+      aria-label={isDark ? t("light") : t("dark")}
       aria-pressed={isDark}
       onClick={toggleTheme}
       className="text-theme-foreground cursor-pointer"

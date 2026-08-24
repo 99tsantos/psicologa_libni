@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import CalendarIcon from "./icons/CalendarIcon";
 import CreditCardIcon from "./icons/CreditCardIcon";
 import InstagramIcon from "./icons/InstagramIcon";
@@ -6,6 +7,9 @@ import TikTokIcon from "./icons/TikTokIcon";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 export default function ContactMe() {
+  const t = useTranslations("contact");
+  const footer = t.raw("footer") as string[];
+
   return (
     <section
       id="contact-me"
@@ -13,11 +17,13 @@ export default function ContactMe() {
     >
       <div className="w-full h-full flex flex-col justify-evenly lg:items-center gap-8 lg:px-12">
         <h1 className="text-4xl lg:text-8xl text-theme-foreground font-patrick lg:mb-8">
-          ¿Agendamos una cita?
+          {t("title")}
         </h1>
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 justify-center">
           <div className="flex flex-col gap-4">
-            <h3 className="text-2xl lg:text-4xl font-patrick">Contáctame</h3>
+            <h3 className="text-2xl lg:text-4xl font-patrick">
+              {t("contactMe")}
+            </h3>
             <ul className="flex flex-col gap-2 lg:gap-4">
               <li className="text-theme-foreground border-b-2 border-b-transparent hover:border-b-theme-foreground border-solid py-1 cursor-pointer">
                 <WhatsAppIcon
@@ -78,7 +84,7 @@ export default function ContactMe() {
             </ul>
           </div>
           <div className="flex flex-col gap-4">
-            <h3 className="text-2xl lg:text-4xl font-patrick">Horarios</h3>
+            <h3 className="text-2xl lg:text-4xl font-patrick">{t("hours")}</h3>
             <ul className="flex flex-col gap-2 lg:gap-4">
               <li className="text-theme-foreground py-1">
                 <CalendarIcon
@@ -86,7 +92,7 @@ export default function ContactMe() {
                   aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
-                Lunes a Viernes 16:00 a 20:00 PM
+                {t("weekdays")}
               </li>
               <li className="text-theme-foreground py-1">
                 <CalendarIcon
@@ -94,12 +100,12 @@ export default function ContactMe() {
                   aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
-                Sábados 10:00 a 12:00 PM
+                {t("saturday")}
               </li>
             </ul>
           </div>
           <div className="flex flex-col gap-4">
-            <h3 className="text-2xl lg:text-4xl font-patrick">Tarifas</h3>
+            <h3 className="text-2xl lg:text-4xl font-patrick">{t("rates")}</h3>
             <ul className="flex flex-col gap-2 lg:gap-4">
               <li className="text-theme-foreground py-1">
                 <CreditCardIcon
@@ -107,7 +113,7 @@ export default function ContactMe() {
                   aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
-                Sesión Individual: Q150.00 / USD 20.00
+                {t("individual")}
               </li>
               <li className="text-theme-foreground py-1">
                 <CreditCardIcon
@@ -115,7 +121,7 @@ export default function ContactMe() {
                   aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
-                Paquete de 4 sesiones: Q550.00 / USD 75.00
+                {t("package4")}
               </li>
               <li className="text-theme-foreground py-1">
                 <CreditCardIcon
@@ -123,7 +129,7 @@ export default function ContactMe() {
                   aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
-                Paquete de 6 sesiones: Q800.00 / USD 105.00
+                {t("package6")}
               </li>
               <li className="text-theme-foreground py-1">
                 <CreditCardIcon
@@ -131,18 +137,17 @@ export default function ContactMe() {
                   aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
-                Paquete de 10 sesiones: Q1,200.00 / USD 155.00
+                {t("package10")}
               </li>
             </ul>
           </div>
         </div>
         <h2 className="text-2xl lg:text-4xl text-theme-foreground font-patrick mb-8 text-center">
-          Pago solamente por transferencia.
+          {footer[0]}
           <br />
-          Tiempo de terapia de 45 min - 1 hr
+          {footer[1]}
           <br />
-          Desde cualquier parte y a la comodidad de tu casa, podemos iniciar una
-          terapia a distancia.
+          {footer[2]}
         </h2>
       </div>
     </section>
