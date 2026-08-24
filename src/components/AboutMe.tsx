@@ -11,10 +11,10 @@ export default function AboutMe() {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8">
-        <h1 className="text-4xl lg:text-8xl text-local-navy font-patrick">
+        <h1 className="text-4xl lg:text-8xl text-theme-foreground font-patrick">
           Sobre mí
         </h1>
-        <div className="text-local-navy flex flex-col justify-normal gap-2 lg:gap-4">
+        <div className="text-theme-foreground flex flex-col justify-normal gap-2 lg:gap-4">
           <p className="text-md lg:text-2xl">
             Me considero una persona en constante búsqueda de conocimiento,
             apasionada por el proceso de comprender el funcionamiento de

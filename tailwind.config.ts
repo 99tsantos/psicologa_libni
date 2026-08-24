@@ -20,10 +20,16 @@ const config: Config = {
         "local-beige": "#b2998a",
         "local-grey": "#cdc3bd",
         "local-lightgrey": "#e5e0d6",
+        theme: {
+          background: "var(--background)",
+          foreground: "var(--foreground)",
+          surface: "var(--surface)",
+          muted: "var(--muted-surface)",
+        },
       },
       fontFamily: {
-        roboto: ['var(--font-roboto)'],
-        patrick: ['var(--font-patrick-hand)'],
+        roboto: ["var(--font-roboto)"],
+        patrick: ["var(--font-patrick-hand)"],
       },
     },
   },

@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #ffffff;
+  --foreground: #232d3f;
+  --surface: #ffffff;
+  --muted-surface: #64748b;
+}
+
+.dark {
+  --background: #232d3f;
+  --foreground: #ffffff;
+  --surface: #232d3f;
+  --muted-surface: #111827;
+}
+
 @layer base {
   body {
     @apply p-0 m-0;
+    background-color: var(--background);
+    color: var(--foreground);
+    transition:
+      background-color 200ms ease,
+      color 200ms ease;
   }
   html {
     @apply p-0 m-0;

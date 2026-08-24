@@ -26,10 +26,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         <link rel="icon" href="/icon.ico" sizes="any" />
       </Head>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function () {
+              var savedTheme = localStorage.getItem("theme");
+              var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+              var shouldUseDark = savedTheme ? savedTheme === "dark" : prefersDark;
+              document.documentElement.classList.toggle("dark", shouldUseDark);
+            })();
+          `,
+        }}
+      />
       <body className={`${roboto.variable} ${patrickHand.variable}`}>
         <Navbar />
         {children}

@@ -1,9 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 import CloseIcon from "./icons/CloseIcon";
 import MenuIcon from "./icons/MenuIcon";
-
-const NAVY_COLOR = "#232d3f";
 
 const NAV_ITEMS = [
   { id: "hero", label: "Hola!" },
@@ -63,14 +62,14 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full bg-opacity-1 bg-white fixed z-10 text-black flex justify-between items-center px-8 py-4">
+    <div className="w-full bg-theme-surface fixed z-10 text-theme-foreground flex justify-between items-center px-8 py-4">
       <div className="bg-[url('/assets/logo.png')] bg-cover bg-center w-10 h-10"></div>
-      <div className="hidden md:block">
+      <div className="hidden md:flex items-center gap-8">
         <ul className="flex gap-4 md:gap-20 justify-end">
           {NAV_ITEMS.map((item, i) => (
             <li
               key={item.id}
-              className={`text-local-navy border-b-2 border-b-transparent hover:border-b-local-navy border-solid py-1 cursor-pointer font-patrick text-md lg:text-2xl ${
+              className={`text-theme-foreground border-b-2 border-b-transparent hover:border-b-theme-foreground border-solid py-1 cursor-pointer font-patrick text-md lg:text-2xl ${
                 selectedSection === i ? "font-bold" : "font-normal"
               }`}
               onClick={() => handleClick(item.id, i)}
@@ -79,6 +78,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <ThemeToggle />
       </div>
       <button
         type="button"
@@ -90,13 +90,13 @@ export default function Navbar() {
         className="w-8 h-8 md:hidden cursor-pointer"
       >
         {isMenuOpen ? (
-          <CloseIcon color={NAVY_COLOR} className="w-full h-full" />
+          <CloseIcon color="currentColor" className="w-full h-full" />
         ) : (
-          <MenuIcon color={NAVY_COLOR} className="w-full h-full" />
+          <MenuIcon color="currentColor" className="w-full h-full" />
         )}
       </button>
       <div
-        className={`fixed top-[72px] bottom-0 right-0 w-64 bg-white shadow-lg transition-transform duration-300 md:hidden ${
+        className={`fixed top-[72px] bottom-0 right-0 w-64 bg-theme-surface shadow-lg transition-transform duration-300 md:hidden flex flex-col ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -104,7 +104,7 @@ export default function Navbar() {
           {NAV_ITEMS.map((item, i) => (
             <li
               key={item.id}
-              className={`text-local-navy border-b-2 border-b-transparent hover:border-b-local-navy border-solid py-1 cursor-pointer font-patrick text-2xl ${
+              className={`text-theme-foreground border-b-2 border-b-transparent hover:border-b-theme-foreground border-solid py-1 cursor-pointer font-patrick text-2xl ${
                 selectedSection === i ? "font-bold" : "font-normal"
               }`}
               onClick={() => handleClick(item.id, i)}
@@ -113,6 +113,9 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <div className="mt-auto flex justify-end px-8 pb-8">
+          <ThemeToggle />
+        </div>
       </div>
     </div>
   );
