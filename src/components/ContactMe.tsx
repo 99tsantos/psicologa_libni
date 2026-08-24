@@ -1,3 +1,12 @@
+import CalendarIcon from "./icons/CalendarIcon";
+import CreditCardIcon from "./icons/CreditCardIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
+import TikTokIcon from "./icons/TikTokIcon";
+import WhatsAppIcon from "./icons/WhatsAppIcon";
+
+const NAVY_COLOR = "#232d3f";
+
 export default function ContactMe() {
   return (
     <section
@@ -13,9 +22,9 @@ export default function ContactMe() {
             <h3 className="text-2xl lg:text-4xl font-patrick">Contáctame</h3>
             <ul className="flex flex-col gap-2 lg:gap-4">
               <li className="text-local-navy border-b-2 border-b-transparent hover:border-b-local-navy border-solid py-1 cursor-pointer">
-                <img
-                  src="/assets/whatsapp.svg"
-                  alt="WhatsApp"
+                <WhatsAppIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 <a
@@ -27,9 +36,9 @@ export default function ContactMe() {
                 </a>
               </li>
               <li className="text-local-navy border-b-2 border-b-transparent hover:border-b-local-navy border-solid py-1 cursor-pointer">
-                <img
-                  src="/assets/instagram.svg"
-                  alt="Instagram"
+                <InstagramIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 <a
@@ -41,9 +50,9 @@ export default function ContactMe() {
                 </a>
               </li>
               <li className="text-local-navy border-b-2 border-b-transparent hover:border-b-local-navy border-solid py-1 cursor-pointer">
-                <img
-                  src="/assets/tiktok.svg"
-                  alt="TikTok"
+                <TikTokIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 <a
@@ -55,9 +64,9 @@ export default function ContactMe() {
                 </a>
               </li>
               <li className="text-local-navy border-b-2 border-b-transparent hover:border-b-local-navy border-solid py-1 cursor-pointer">
-                <img
-                  src="/assets/linkedin.svg"
-                  alt="LinkedIn"
+                <LinkedInIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 <a
@@ -74,17 +83,17 @@ export default function ContactMe() {
             <h3 className="text-2xl lg:text-4xl font-patrick">Horarios</h3>
             <ul className="flex flex-col gap-2 lg:gap-4">
               <li className="text-local-navy py-1">
-                <img
-                  src="/assets/calendar.svg"
-                  alt="Calendar"
+                <CalendarIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 Lunes a Viernes 16:00 a 20:00 PM
               </li>
               <li className="text-local-navy py-1">
-                <img
-                  src="/assets/calendar.svg"
-                  alt="Calendar"
+                <CalendarIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 Sábados 10:00 a 12:00 PM
@@ -95,33 +104,33 @@ export default function ContactMe() {
             <h3 className="text-2xl lg:text-4xl font-patrick">Tarifas</h3>
             <ul className="flex flex-col gap-2 lg:gap-4">
               <li className="text-local-navy py-1">
-                <img
-                  src="/assets/credit-card.svg"
-                  alt="Credit Card"
+                <CreditCardIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 Sesión Individual: Q150.00 / USD 20.00
               </li>
               <li className="text-local-navy py-1">
-                <img
-                  src="/assets/credit-card.svg"
-                  alt="Credit Card"
+                <CreditCardIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 Paquete de 4 sesiones: Q550.00 / USD 75.00
               </li>
               <li className="text-local-navy py-1">
-                <img
-                  src="/assets/credit-card.svg"
-                  alt="Credit Card"
+                <CreditCardIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 Paquete de 6 sesiones: Q800.00 / USD 105.00
               </li>
               <li className="text-local-navy py-1">
-                <img
-                  src="/assets/credit-card.svg"
-                  alt="Credit Card"
+                <CreditCardIcon
+                  color={NAVY_COLOR}
+                  aria-hidden="true"
                   className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
                 />
                 Paquete de 10 sesiones: Q1,200.00 / USD 155.00
