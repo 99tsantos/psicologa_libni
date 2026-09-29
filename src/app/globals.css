@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: rgba(206, 180, 148, 0.3);
   --foreground: #232d3f;
   --surface: #ffffff;
   --muted-surface: #64748b;
+  --sidebar: #ffffff;
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --foreground: #ffffff;
   --surface: #232d3f;
   --muted-surface: #111827;
+  --sidebar: #232d3f;
 }
 
 @layer base {
@@ -34,8 +36,20 @@
 }
 
 @layer utilities {
+  /* Frosted navbar: tinted with the theme surface color + blur, so content
+     underneath is obscured but the bar still feels transparent. Uses vars
+     (not Tailwind dark:) so it follows the app theme toggle (.dark class). */
+  .navbar-frosted {
+    background-color: color-mix(in srgb, var(--surface) 72%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  /* Opaque mobile menu, matched to the rendered page background */
+  .sidebar-solid {
+    background-color: var(--sidebar);
+  }
   .hero-shadow {
-    box-shadow: -6rem 6rem 0px rgba(206, 180, 148, 0.3);
+    box-shadow: -6rem 6rem 0px rgba(206, 180, 148, 0.6);
   }
   .services-shadow {
     box-shadow: 6rem -6rem 0px rgba(206, 180, 148, 0.3);
