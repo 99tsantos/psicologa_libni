@@ -2,6 +2,16 @@ import { useTranslations } from "next-intl";
 
 export default function Services() {
   const t = useTranslations("services");
+  const subtitleRaw = t.raw("subtitle");
+  const methodRaw = t.raw("method");
+  const subtitle =
+    Array.isArray(subtitleRaw) && subtitleRaw.length === 5
+      ? (subtitleRaw as string[])
+      : null;
+  const method =
+    Array.isArray(methodRaw) && methodRaw.length === 10
+      ? (methodRaw as string[])
+      : null;
 
   return (
     <section
@@ -12,14 +22,41 @@ export default function Services() {
         <h1 className="text-4xl lg:text-8xl text-theme-foreground font-patrick">
           {t("title")}
         </h1>
-        <h3 className="text-xl lg:text-3xl font-bold text-theme-foreground">
-          {t("subtitle")}
-        </h3>
-        <p className="text-lg lg:text-2xl text-theme-foreground">
-          {t("intro")}
+        <p className="text-xl lg:text-2xl text-theme-foreground">
+          {subtitle ? (
+            <>
+              {subtitle[0]}
+              <span className="font-bold">{subtitle[1]}</span>
+              {subtitle[2]}
+              <span className="font-bold">{subtitle[3]}</span>
+              {subtitle[4]}
+            </>
+          ) : (
+            String(subtitleRaw ?? "")
+          )}
         </p>
         <p className="text-lg lg:text-2xl text-theme-foreground">
-          {t("method")}
+          {method ? (
+            <>
+              {method[0]}
+              <br />
+              <span className="font-bold">{method[1]}</span>
+              {method[2]}
+              <br />
+              <span className="font-bold">{method[3]}</span>
+              {method[4]}
+              <br />
+              <span className="font-bold">{method[5]}</span>
+              <br />
+              <span className="font-bold">{method[6]}</span>
+              {method[7]}
+              <br />
+              <span className="font-bold">{method[8]}</span>
+              {method[9]}
+            </>
+          ) : (
+            String(methodRaw ?? "")
+          )}
         </p>
       </div>
       <div className="bg-theme-muted px-8 xl:px-12 services-shadow">

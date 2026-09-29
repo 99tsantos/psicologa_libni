@@ -1,10 +1,79 @@
 {
-  "metadata": {"title": "Psicóloga Libní", "description": "Página profissional de Libní Gonzaléz."},
-  "navbar": {"home": "Olá!", "services": "Serviços", "about": "Sobre mim", "contact": "Contato", "openMenu": "Abrir menu de navegação", "closeMenu": "Fechar menu de navegação"},
-  "theme": {"light": "Ativar modo claro", "dark": "Ativar modo escuro"},
-  "language": {"label": "Mudar idioma", "es": "Español", "en": "English", "pt": "Português"},
-  "hero": {"imageTitle": "Psicóloga Libní Gonzaléz", "title": "Olá! Eu sou Libní Gonzaléz", "welcome": "Bem-vindos!", "intro": "Sou psicóloga clínica, formada pela Universidad Mariano Gálvez de Guatemala. Ofereço atendimento profissional de qualidade, autorizado pelo Colégio de Psicólogos da Guatemala. Tenho formação e certificações acadêmicas em Neuropsicologia.", "therapy": "No meu consultório, você encontrará aconselhamento e terapia psicológica para uma variedade de dificuldades e problemas psicológicos.", "license": "Registro profissional ativo: 14470."},
-  "services": {"title": "Serviços", "imageTitle": "Serviços", "subtitle": "Aconselhamento e Terapia psicológica - Online", "intro": "Com o objetivo de ajudar você a superar suas dificuldades e alcançar uma vida mais plena e satisfatória, realizaremos um tratamento personalizado e adaptado às suas necessidades, sempre baseado em confiança, respeito e confidencialidade.", "method": "Na minha prática profissional, utilizo uma metodologia integrativa que maximiza a eficácia da terapia e adapta a intervenção às necessidades e características individuais de cada caso."},
-  "about": {"title": "Sobre mim", "imageTitle": "Psicóloga Libní Gonzaléz", "background": "Considero-me uma pessoa em constante busca por conhecimento, apaixonada pelo processo de compreender o funcionamento de diferentes disciplinas. Tenho profundo interesse por ciência e arte, o que me leva a participar regularmente de atividades que integram essas duas áreas.", "interest": "Meu principal interesse na área da psicologia sempre foi a compreensão profunda e o tratamento eficaz dos diversos problemas e transtornos psicológicos."},
-  "contact": {"title": "Vamos marcar uma consulta?", "contactMe": "Entre em contato", "hours": "Horários", "rates": "Valores", "weekdays": "Segunda a sexta, das 16:00 às 20:00", "saturday": "Sábados, das 10:00 às 12:00", "individual": "Sessão individual: Q150.00 / USD 20.00", "package4": "Pacote de 4 sessões: Q550.00 / USD 75.00", "package6": "Pacote de 6 sessões: Q800.00 / USD 105.00", "package10": "Pacote de 10 sessões: Q1,200.00 / USD 155.00", "footer": ["Pagamento somente por transferência.", "Tempo de terapia: 45 min - 1 h", "De qualquer lugar e no conforto da sua casa, podemos iniciar uma terapia online."]}
+  "metadata": {
+    "title": "Psicóloga Libní",
+    "description": "Página profissional de Libní Gonzaléz."
+  },
+  "navbar": {
+    "home": "Olá!",
+    "services": "Serviços",
+    "about": "Sobre mim",
+    "contact": "Sessões",
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação"
+  },
+  "theme": { "light": "Ativar modo claro", "dark": "Ativar modo escuro" },
+  "language": {
+    "label": "Mudar idioma",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  },
+  "hero": {
+    "imageTitle": "Psicóloga Libní Gonzaléz",
+    "title": "Olá! Eu sou a Libní Gonzaléz",
+    "welcome": "Bem-vinda!",
+    "intro": [
+      "Sou ",
+      "Psicóloga Clínica",
+      " desde 2022. Tenho formação e acreditações académicas em Neuropsicologia, obtidas através de vários estudos, entre eles um ",
+      "Mestrado em Neurociências Aplicadas à Psicologia",
+      " e vários diplomas internacionais em Neuropsicologia. Isto permite-me integrar uma abordagem clínica e neurocientífica nas minhas intervenções."
+    ]
+  },
+  "services": {
+    "title": "Serviços",
+    "imageTitle": "Serviços",
+    "subtitle": [
+      "Como ",
+      "Psicóloga Clínica",
+      " ofereço acompanhamento profissional a pessoas que procuram melhorar o teu bem-estar emocional e enfrentar diferentes dificuldades na tua vida. ",
+      "Todas as minhas sessões são realizadas online",
+      ", o que permite maior comodidade, flexibilidade e acessibilidade para os meus pacientes."
+    ],
+    "method": [
+      "Os meus serviços incluem:",
+      "Terapia individual: ",
+      " Um espaço seguro e confidencial para trabalhares emoções, pensamentos e comportamentos que afetam o teu bem-estar.",
+      "Gestão de stress e ansiedade:",
+      " Técnicas e estratégias para gerires preocupações, tensões e sintomas de ansiedade.",
+      "Apoio no luto.",
+      "Autoconhecimento ",
+      "para melhorares a tua qualidade de vida.",
+      "Psicoeducação e estratégias para o bem-estar:",
+      " Aprendizagem de ferramentas práticas para o equilíbrio emocional e mental."
+    ]
+  },
+  "about": {
+    "title": "Sobre mim",
+    "imageTitle": "Psicóloga Libní Gonzaléz",
+    "background": "Considero-me uma pessoa em constante busca de conhecimento, apaixonada pelo processo de compreender o funcionamento de diferentes disciplinas. Tenho um profundo interesse por ciência e arte, o que me leva a participar regularmente em atividades que integram estes dois campos.",
+    "interest": "O meu principal interesse na área da psicologia sempre foi a compreensão profunda e o tratamento eficaz dos diversos problemas e perturbações psicológicas."
+  },
+  "contact": {
+    "title": "Sessões",
+    "contactMe": "Contacta-me",
+    "hours": "Horários",
+    "rates": "Tarifas",
+    "weekdays": "Segunda a sexta, das 16:00 às 20:00",
+    "saturday": "Sábados, das 10:00 às 12:00",
+    "individual": "Sessão individual: Q150.00 / USD 20.00",
+    "package4": "Pacote de 4 sessões: Q550.00 / USD 75.00",
+    "package6": "Pacote de 6 sessões: Q800.00 / USD 105.00",
+    "package10": "Pacote de 10 sessões: Q1,200.00 / USD 155.00",
+    "footer": [
+      "Pagamento apenas por transferência.",
+      "Tempo de terapia de 45 min - 1 h",
+      "De qualquer parte e no conforto da tua casa, podemos começar uma terapia à distância."
+    ]
+  }
 }

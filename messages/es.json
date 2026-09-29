@@ -7,7 +7,7 @@
     "home": "Hola!",
     "services": "Servicios",
     "about": "Sobre mí",
-    "contact": "Contactos",
+    "contact": "Sesiones",
     "openMenu": "Abrir menú de navegación",
     "closeMenu": "Cerrar menú de navegación"
   },
@@ -22,16 +22,36 @@
     "imageTitle": "Psicóloga Libní Gonzaléz",
     "title": "Hola! Soy Libní Gonzaléz",
     "welcome": "Bienvenidos!",
-    "intro": "Soy Psicóloga clínica, egresada de la Universidad Mariano Gálvez de Guatemala. Con garantía de calidad profesional autorizada por el Colegio de Psicólogos de Guatemala. Cuento con formación y acreditaciones académicas en Neuropsicología.",
-    "therapy": "En mi consulta encontrarás asesoramiento y terapia psicológica para una variedad de dificultades y problemas psicológicos.",
-    "license": "Mi colegiado activo : 14470."
+    "intro": [
+      "Soy ",
+      "Psicóloga Clínica",
+      " desde 2022. Cuento con formación y acreditaciones académicas en Neuropsicología, obtenidas a través de diversos estudios, entre ellos una ",
+      "Maestría en Neurociencias Aplicadas a la Psicología",
+      " y varios diplomados internacionales en Neuropsicología. Esto me permite integrar un enfoque clínico y neurocientífico en mis intervenciones."
+    ]
   },
   "services": {
     "title": "Servicios",
     "imageTitle": "Servicios",
-    "subtitle": "Asesoramiento y Terapia psicológica - Virtual",
-    "intro": "Con el objetivo de ayudarte a superar tus problemas y lograr una vida más plena y satisfactoria, realizaremos un tratamiento personalizado y adaptado a tus necesidades, partiendo siempre de una base de confianza, respeto y confidencialidad.",
-    "method": "En mi práctica profesional empleo una metodología integradora, lo cual permite maximizar la eficacia de la terapia y realizar una intervención adaptada a las necesidades y características particulares de cada caso."
+    "subtitle": [
+      "Como ",
+      "Psicóloga Clínica",
+      " brindo acompañamiento profesional a personas que buscan mejorar su bienestar emocional y afrontar distintas dificultades en su vida. ",
+      "Todas mis sesiones se realizan de manera virtual",
+      ", lo que permite mayor comodidad, flexibilidad y accesibilidad para mis pacientes."
+    ],
+    "method": [
+      "Mis servicios incluyen:",
+      "Terapia individual: ",
+      " Espacio seguro y confidencial para trabajar en emociones, pensamientos y conductas que afectan tu bienestar.",
+      "Manejo del estrés y ansiedad:",
+      " Técnicas y estrategias para gestionar preocupaciones, tensiones y síntomas de ansiedad.",
+      "Manejo de duelos.",
+      "Autoconocimiento ",
+      "para mejorar la calidad de vida.",
+      "Psicoeducación y estrategias para el bienestar:",
+      " Aprendizaje de herramientas prácticas para el equilibrio emocional y mental."
+    ]
   },
   "about": {
     "title": "Sobre mí",
@@ -40,7 +60,7 @@
     "interest": "Mi principal interés en el ámbito de la psicología ha sido siempre la comprensión profunda y el tratamiento eficaz de los diversos problemas y trastornos psicológicos."
   },
   "contact": {
-    "title": "¿Agendamos una cita?",
+    "title": "Sesiones",
     "contactMe": "Contáctame",
     "hours": "Horarios",
     "rates": "Tarifas",

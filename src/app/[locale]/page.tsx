@@ -8,8 +8,8 @@ export default function Home() {
     <main className="w-full pt-24 lg:pt-0">
       <Hero />
       <Services />
-      <AboutMe />
       <ContactMe />
+      <AboutMe />
     </main>
   );
 }

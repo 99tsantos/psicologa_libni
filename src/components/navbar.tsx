@@ -16,8 +16,8 @@ export default function Navbar() {
   const navItems = [
     { id: NAV_IDS[0], label: t("home") },
     { id: NAV_IDS[1], label: t("services") },
-    { id: NAV_IDS[2], label: t("about") },
     { id: NAV_IDS[3], label: t("contact") },
+    { id: NAV_IDS[2], label: t("about") },
   ];
 
   useEffect(() => {
@@ -68,7 +68,7 @@ export default function Navbar() {
   );
 
   return (
-    <div className="w-full bg-theme-surface fixed z-10 text-theme-foreground flex justify-between items-center px-8 py-4">
+    <div className="w-full fixed z-10 text-theme-foreground flex justify-between items-center px-8 py-4">
       <div className="bg-[url('/assets/logo.png')] bg-cover bg-center w-10 h-10" />
       <div className="hidden md:flex items-center gap-8">
         <ul className="flex gap-4 md:gap-20 justify-end">
@@ -98,7 +98,7 @@ export default function Navbar() {
         )}
       </button>
       <div
-        className={`fixed top-[72px] bottom-0 right-0 w-64 bg-theme-surface shadow-lg transition-transform duration-300 md:hidden flex flex-col ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-[72px] bottom-0 right-0 w-64 shadow-lg transition-transform duration-300 md:hidden flex flex-col ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <ul className="flex flex-col gap-6 items-end px-8 pt-8">
           {navItems.map((item, index) => (
