@@ -6,20 +6,10 @@ import CalendarIcon from "./icons/CalendarIcon";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import { BOOKING_URL } from "../lib/booking";
 
-type AvailabilityProps = {
-  showCta?: boolean;
-  showNote?: boolean;
-  className?: string;
-};
-
 // Shared availability block. Hours strings live once in the `sessions`
 // namespace; Contact and Sessions render this component (duplicate display,
 // single source). CTA links out to the Google booking page (no iframe).
-export default function Availability({
-  showCta = false,
-  showNote = false,
-  className = "",
-}: AvailabilityProps) {
+export default function Availability({ className = "" }: { className?: string }) {
   const t = useTranslations("sessions");
   const tAvail = useTranslations("availability");
   const isLive = BOOKING_URL.length > 0;
@@ -46,11 +36,8 @@ export default function Availability({
           {t("saturday")}
         </li>
       </ul>
-      {showNote && (
-        <p className="text-md lg:text-2xl mt-2 lg:mt-4">{t("note")}</p>
-      )}
-      {showCta && (
-        <a
+      <p className="text-md lg:text-2xl mt-2 lg:mt-4">{t("note")}</p>
+      <a
           href={href}
           {...(isLive
             ? { target: "_blank", rel: "noopener noreferrer" }
@@ -69,7 +56,6 @@ export default function Availability({
             className="inline-block w-5 lg:w-6 h-5 lg:h-6"
           />
         </a>
-      )}
     </div>
   );
 }
