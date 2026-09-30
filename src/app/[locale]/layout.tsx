@@ -5,6 +5,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { Roboto, Patrick_Hand } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
+import { WhatsAppHandoffProvider } from "@/components/WhatsAppHandoff";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -52,9 +53,11 @@ export default async function LocaleLayout({
     <html lang={params.locale} suppressHydrationWarning>
       <body className={`${roboto.variable} ${patrickHand.variable}`}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          {children}
-          <Footer />
+          <WhatsAppHandoffProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </WhatsAppHandoffProvider>
         </NextIntlClientProvider>
       </body>
     </html>
