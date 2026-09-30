@@ -6,8 +6,9 @@
   "navbar": {
     "home": "Hello!",
     "services": "Services",
+    "sessions": "Sessions",
     "about": "About me",
-    "contact": "Sessions",
+    "contact": "Contact",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu"
   },
@@ -53,6 +54,16 @@
       " Learning practical tools for emotional and mental balance."
     ]
   },
+  "sessions": {
+    "title": "Sessions",
+    "imageTitle": "Online sessions",
+    "lead": "Here is my session information:",
+    "body": "Each session is unique, just like you. My approach is fully personalized and focused on supporting you in achieving the goals you seek in therapy. I work with scientifically supported tools, integrating a multidisciplinary approach with cognitive-behavioral, neuropsychological, and humanistic foundations. Throughout the process, we will build a therapeutic plan together that lets us move step by step toward the goals set in the sessions.",
+    "hours": "Hours",
+    "weekdays": "Monday to Thursday 4:00 to 8:00 PM (Guatemala time)",
+    "saturday": "Saturdays 10:00 AM to 12:00 PM (subject to availability)",
+    "note": "Weekends only by prior arrangement. Please note that some time slots may already be booked."
+  },
   "about": {
     "title": "About me",
     "imageTitle": "Psychologist Libní Gonzaléz",
@@ -60,12 +71,8 @@
     "interest": "My main interest in psychology has always been the deep understanding and effective treatment of different psychological problems and disorders."
   },
   "contact": {
-    "title": "Sessions",
-    "contactMe": "Contact me",
-    "hours": "Hours",
+    "title": "Contact",
     "rates": "Rates",
-    "weekdays": "Monday to Friday 4:00 to 8:00 PM",
-    "saturday": "Saturdays 10:00 AM to 12:00 PM",
     "individual": "Individual session: Q150.00 / USD 20.00",
     "package4": "4-session package: Q550.00 / USD 75.00",
     "package6": "6-session package: Q800.00 / USD 105.00",
@@ -75,5 +82,15 @@
       "Therapy sessions last 45 min - 1 hr",
       "From anywhere and from the comfort of your home, we can begin online therapy."
     ]
+  },
+  "footer": {
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "email": "Email"
+  },
+  "whatsapp": {
+    "msg": "Hi, I'd like to book a session",
+    "label": "Message me on WhatsApp"
   }
 }

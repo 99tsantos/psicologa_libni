@@ -4,10 +4,11 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import LanguageToggle from "./LanguageToggle";
 import ThemeToggle from "./ThemeToggle";
+import WhatsAppFloat from "./WhatsAppFloat";
 import CloseIcon from "./icons/CloseIcon";
 import MenuIcon from "./icons/MenuIcon";
 
-const NAV_IDS = ["hero", "services", "about-me", "contact-me"];
+const NAV_IDS = ["hero", "services", "sessions", "about-me", "contact-me"];
 
 export default function Navbar() {
   const t = useTranslations("navbar");
@@ -16,8 +17,9 @@ export default function Navbar() {
   const navItems = [
     { id: NAV_IDS[0], label: t("home") },
     { id: NAV_IDS[1], label: t("services") },
-    { id: NAV_IDS[3], label: t("contact") },
-    { id: NAV_IDS[2], label: t("about") },
+    { id: NAV_IDS[2], label: t("sessions") },
+    { id: NAV_IDS[3], label: t("about") },
+    { id: NAV_IDS[4], label: t("contact") },
   ];
 
   useEffect(() => {
@@ -115,6 +117,7 @@ export default function Navbar() {
         </ul>
         <div className="mt-auto flex justify-end px-8 pb-8">{controls}</div>
       </div>
+      <WhatsAppFloat shifted={isMenuOpen} />
     </>
   );
 }

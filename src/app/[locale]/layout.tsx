@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { Roboto, Patrick_Hand } from "next/font/google";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

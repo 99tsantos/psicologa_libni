@@ -6,8 +6,9 @@
   "navbar": {
     "home": "Olá!",
     "services": "Serviços",
+    "sessions": "Sessões",
     "about": "Sobre mim",
-    "contact": "Sessões",
+    "contact": "Contacto",
     "openMenu": "Abrir menu de navegação",
     "closeMenu": "Fechar menu de navegação"
   },
@@ -53,6 +54,16 @@
       " Aprendizagem de ferramentas práticas para o equilíbrio emocional e mental."
     ]
   },
+  "sessions": {
+    "title": "Sessões",
+    "imageTitle": "Sessões online",
+    "lead": "Aqui está a minha informação sobre as sessões:",
+    "body": "Cada sessão é única, tal como tu. A minha abordagem é totalmente personalizada e orientada para te acompanhar no alcance dos objetivos que procuras na terapia. Trabalho com ferramentas com evidência científica, integrando uma abordagem multidisciplinar com bases cognitivo-comportamentais, neuropsicológicas e humanistas. Ao longo do processo, construiremos juntos um plano terapêutico que nos permita avançar passo a passo até ao cumprimento dos objetivos definidos nas sessões.",
+    "hours": "Horários",
+    "weekdays": "Segunda a quinta, das 16:00 às 20:00 (hora da Guatemala)",
+    "saturday": "Sábados, das 10:00 às 12:00 (mediante confirmação)",
+    "note": "Fins de semana apenas mediante coordenação prévia. Alguns horários podem já estar ocupados."
+  },
   "about": {
     "title": "Sobre mim",
     "imageTitle": "Psicóloga Libní Gonzaléz",
@@ -60,12 +71,8 @@
     "interest": "O meu principal interesse na área da psicologia sempre foi a compreensão profunda e o tratamento eficaz dos diversos problemas e perturbações psicológicas."
   },
   "contact": {
-    "title": "Sessões",
-    "contactMe": "Contacta-me",
-    "hours": "Horários",
+    "title": "Contacto",
     "rates": "Tarifas",
-    "weekdays": "Segunda a sexta, das 16:00 às 20:00",
-    "saturday": "Sábados, das 10:00 às 12:00",
     "individual": "Sessão individual: Q150.00 / USD 20.00",
     "package4": "Pacote de 4 sessões: Q550.00 / USD 75.00",
     "package6": "Pacote de 6 sessões: Q800.00 / USD 105.00",
@@ -75,5 +82,15 @@
       "Tempo de terapia de 45 min - 1 h",
       "De qualquer parte e no conforto da tua casa, podemos começar uma terapia à distância."
     ]
+  },
+  "footer": {
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "email": "E-mail"
+  },
+  "whatsapp": {
+    "msg": "Olá, gostaria de agendar uma sessão",
+    "label": "Fala comigo no WhatsApp"
   }
 }
