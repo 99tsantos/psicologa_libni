@@ -5,7 +5,7 @@ export default function AboutMe() {
 
   return (
     <section
-      className="w-full lg:h-screen flex flex-col lg:flex-row lg:justify-center items-center gap-20 px-8 lg:px-0 pt-16 lg:pt-0"
+      className="w-full lg:min-h-screen flex flex-col lg:flex-row lg:justify-center items-center gap-20 px-8 lg:px-0 pt-16 lg:pt-0"
       id="about-me"
     >
       <div className="flex justify-center items-center about-shadow ">

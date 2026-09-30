@@ -67,7 +67,7 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <p className="text-md lg:text-2xl text-theme-foreground text-center">
+      <p className="text-2xl lg:text-4xl text-theme-foreground font-patrick text-center rounded-full border-2 border-theme-foreground px-8 py-4">
         {t("success")}
       </p>
     );
