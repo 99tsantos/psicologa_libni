@@ -6,6 +6,8 @@ import { Roboto, Patrick_Hand } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import { WhatsAppHandoffProvider } from "@/components/WhatsAppHandoff";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -59,6 +61,8 @@ export default async function LocaleLayout({
             <Footer />
           </WhatsAppHandoffProvider>
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

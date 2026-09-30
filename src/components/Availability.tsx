@@ -1,4 +1,7 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import { track } from "@vercel/analytics";
 import CalendarIcon from "./icons/CalendarIcon";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import { BOOKING_URL } from "../lib/booking";
@@ -53,6 +56,9 @@ export default function Availability({
             ? { target: "_blank", rel: "noopener noreferrer" }
             : { "aria-disabled": true })}
           aria-label={tAvail("ctaLabel")}
+          onClick={() => {
+            if (isLive) track("booking_cta_click");
+          }}
           className={`inline-flex items-center gap-2 rounded-full border-2 border-theme-foreground bg-transparent text-theme-foreground px-6 py-3 text-md lg:text-2xl mt-2 lg:mt-4 w-fit transition-colors hover:bg-theme-foreground hover:text-theme-surface ${
             isLive ? "" : "opacity-80"
           }`}

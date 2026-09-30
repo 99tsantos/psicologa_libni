@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { track } from "@vercel/analytics";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { useWhatsAppHandoff } from "./WhatsAppHandoff";
 import EmailIcon from "./icons/EmailIcon";
@@ -38,6 +39,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("whatsapp")}
+        onClick={() => track("whatsapp_click", { location: "footer" })}
         className="text-theme-foreground hover:opacity-70 transition-opacity"
       >
         <span
@@ -55,6 +57,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("instagram")}
+        onClick={() => track("instagram_click")}
         className="text-theme-foreground hover:opacity-70 transition-opacity"
       >
         <span className="flex w-12 h-12 items-center justify-center">
@@ -70,6 +73,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("tiktok")}
+        onClick={() => track("tiktok_click")}
         className="text-theme-foreground hover:opacity-70 transition-opacity"
       >
         <span className="flex w-12 h-12 items-center justify-center">
@@ -83,6 +87,7 @@ export default function Footer() {
       <a
         href="mailto:psicologalibnigonzalez@gmail.com"
         aria-label={t("email")}
+        onClick={() => track("email_click")}
         className="text-theme-foreground hover:opacity-70 transition-opacity"
       >
         <span className="flex w-12 h-12 items-center justify-center">

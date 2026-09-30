@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { track } from "@vercel/analytics";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useState } from "react";
 
@@ -20,6 +21,9 @@ export default function LanguageToggle() {
 
   const changeLocale = (nextLocale: (typeof LOCALES)[number]) => {
     setIsOpen(false);
+    if (nextLocale !== locale) {
+      track("language_switch", { from: locale, to: nextLocale });
+    }
     router.replace(pathname, { locale: nextLocale });
   };
 
