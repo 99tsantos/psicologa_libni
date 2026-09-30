@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import CalendarIcon from "./icons/CalendarIcon";
+import CreditCardIcon from "./icons/CreditCardIcon";
 
 export default function Sessions() {
   const t = useTranslations("sessions");
@@ -22,25 +23,66 @@ export default function Sessions() {
         <div className="text-theme-foreground flex flex-col justify-normal gap-2 lg:gap-4">
           <p className="text-md lg:text-2xl">{t("lead")}</p>
           <p className="text-md lg:text-2xl">{t("body")}</p>
-          <h3 className="text-2xl lg:text-4xl font-patrick">{t("hours")}</h3>
-          <ul className="flex flex-col gap-2 lg:gap-4">
-            <li className="text-theme-foreground py-1">
-              <CalendarIcon
-                color="currentColor"
-                aria-hidden="true"
-                className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
-              />
-              {t("weekdays")}
-            </li>
-            <li className="text-theme-foreground py-1">
-              <CalendarIcon
-                color="currentColor"
-                aria-hidden="true"
-                className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
-              />
-              {t("saturday")}
-            </li>
-          </ul>
+          <div className="flex flex-col md:flex-row gap-6 lg:gap-8">
+            <div className="flex-1">
+              <h3 className="text-2xl lg:text-4xl font-patrick">{t("hours")}</h3>
+              <ul className="flex flex-col gap-1 lg:gap-2 mt-2 lg:mt-4">
+                <li className="text-md lg:text-2xl text-theme-foreground">
+                  <CalendarIcon
+                    color="currentColor"
+                    aria-hidden="true"
+                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
+                  />
+                  {t("weekdays")}
+                </li>
+                <li className="text-md lg:text-2xl text-theme-foreground">
+                  <CalendarIcon
+                    color="currentColor"
+                    aria-hidden="true"
+                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
+                  />
+                  {t("saturday")}
+                </li>
+              </ul>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl lg:text-4xl font-patrick">{t("rates")}</h3>
+              <ul className="flex flex-col gap-1 lg:gap-2 mt-2 lg:mt-4">
+                <li className="text-md lg:text-2xl text-theme-foreground">
+                  <CreditCardIcon
+                    color="currentColor"
+                    aria-hidden="true"
+                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
+                  />
+                  {t("individual")}
+                </li>
+                <li className="text-md lg:text-2xl text-theme-foreground">
+                  <CreditCardIcon
+                    color="currentColor"
+                    aria-hidden="true"
+                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
+                  />
+                  {t("package4")}
+                </li>
+                <li className="text-md lg:text-2xl text-theme-foreground">
+                  <CreditCardIcon
+                    color="currentColor"
+                    aria-hidden="true"
+                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
+                  />
+                  {t("package6")}
+                </li>
+                <li className="text-md lg:text-2xl text-theme-foreground">
+                  <CreditCardIcon
+                    color="currentColor"
+                    aria-hidden="true"
+                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
+                  />
+                  {t("package10")}
+                </li>
+              </ul>
+            </div>
+          </div>
           <p className="text-md lg:text-2xl">{t("note")}</p>
         </div>
       </div>

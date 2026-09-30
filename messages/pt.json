@@ -62,7 +62,12 @@
     "hours": "Horários",
     "weekdays": "Segunda a quinta, das 16:00 às 20:00 (hora da Guatemala)",
     "saturday": "Sábados, das 10:00 às 12:00 (mediante confirmação)",
-    "note": "Fins de semana apenas mediante coordenação prévia. Alguns horários podem já estar ocupados."
+    "note": "Fins de semana apenas mediante coordenação prévia. Alguns horários podem já estar ocupados.",
+    "rates": "Tarifas",
+    "individual": "Sessão individual: Q150.00 / USD 20.00",
+    "package4": "Pacote de 4 sessões: Q550.00 / USD 75.00",
+    "package6": "Pacote de 6 sessões: Q800.00 / USD 105.00",
+    "package10": "Pacote de 10 sessões: Q1,200.00 / USD 155.00"
   },
   "about": {
     "title": "Sobre mim",
@@ -72,11 +77,6 @@
   },
   "contact": {
     "title": "Contacto",
-    "rates": "Tarifas",
-    "individual": "Sessão individual: Q150.00 / USD 20.00",
-    "package4": "Pacote de 4 sessões: Q550.00 / USD 75.00",
-    "package6": "Pacote de 6 sessões: Q800.00 / USD 105.00",
-    "package10": "Pacote de 10 sessões: Q1,200.00 / USD 155.00",
     "footer": [
       "Pagamento apenas por transferência.",
       "Tempo de terapia de 45 min - 1 h",

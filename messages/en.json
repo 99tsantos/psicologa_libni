@@ -62,7 +62,12 @@
     "hours": "Hours",
     "weekdays": "Monday to Thursday 4:00 to 8:00 PM (Guatemala time)",
     "saturday": "Saturdays 10:00 AM to 12:00 PM (subject to availability)",
-    "note": "Weekends only by prior arrangement. Please note that some time slots may already be booked."
+    "note": "Weekends only by prior arrangement. Please note that some time slots may already be booked.",
+    "rates": "Rates",
+    "individual": "Individual session: Q150.00 / USD 20.00",
+    "package4": "4-session package: Q550.00 / USD 75.00",
+    "package6": "6-session package: Q800.00 / USD 105.00",
+    "package10": "10-session package: Q1,200.00 / USD 155.00"
   },
   "about": {
     "title": "About me",
@@ -72,11 +77,6 @@
   },
   "contact": {
     "title": "Contact",
-    "rates": "Rates",
-    "individual": "Individual session: Q150.00 / USD 20.00",
-    "package4": "4-session package: Q550.00 / USD 75.00",
-    "package6": "6-session package: Q800.00 / USD 105.00",
-    "package10": "10-session package: Q1,200.00 / USD 155.00",
     "footer": [
       "Payment by bank transfer only.",
       "Therapy sessions last 45 min - 1 hr",
