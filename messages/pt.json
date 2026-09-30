@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Psicóloga Libní",
-    "description": "Página profissional de Libní Gonzaléz."
+    "description": "Página profissional de Libní González."
   },
   "navbar": {
     "home": "Olá!",
@@ -20,8 +20,8 @@
     "pt": "Português"
   },
   "hero": {
-    "imageTitle": "Psicóloga Libní Gonzaléz",
-    "title": "Olá! Eu sou a Libní Gonzaléz",
+    "imageTitle": "Psicóloga Libní González",
+    "title": "Olá! Eu sou a Libní González",
     "welcome": "Bem-vinda!",
     "intro": [
       "Sou ",
@@ -71,7 +71,7 @@
   },
   "about": {
     "title": "Sobre mim",
-    "imageTitle": "Psicóloga Libní Gonzaléz",
+    "imageTitle": "Psicóloga Libní González",
     "background": "Considero-me uma pessoa em constante busca de conhecimento, apaixonada pelo processo de compreender o funcionamento de diferentes disciplinas. Tenho um profundo interesse por ciência e arte, o que me leva a participar regularmente em atividades que integram estes dois campos.",
     "interest": "O meu principal interesse na área da psicologia sempre foi a compreensão profunda e o tratamento eficaz dos diversos problemas e perturbações psicológicas."
   },
@@ -92,5 +92,9 @@
   "whatsapp": {
     "msg": "Olá, gostaria de agendar uma sessão",
     "label": "Fala comigo no WhatsApp"
+  },
+  "availability": {
+    "cta": "Agendar agora",
+    "ctaLabel": "Agendar agora, abre num novo separador"
   }
 }

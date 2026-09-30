@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Psychologist Libní",
-    "description": "Professional website of Libní Gonzaléz."
+    "description": "Professional website of Libní González."
   },
   "navbar": {
     "home": "Hello!",
@@ -20,8 +20,8 @@
     "pt": "Português"
   },
   "hero": {
-    "imageTitle": "Psychologist Libní Gonzaléz",
-    "title": "Hello! I am Libní Gonzaléz",
+    "imageTitle": "Psychologist Libní González",
+    "title": "Hello! I am Libní González",
     "welcome": "Welcome!",
     "intro": [
       "I am a ",
@@ -71,7 +71,7 @@
   },
   "about": {
     "title": "About me",
-    "imageTitle": "Psychologist Libní Gonzaléz",
+    "imageTitle": "Psychologist Libní González",
     "background": "I consider myself a person who is always seeking knowledge and is passionate about understanding how different disciplines work. I have a deep interest in science and art, which regularly leads me to take part in activities that bring both fields together.",
     "interest": "My main interest in psychology has always been the deep understanding and effective treatment of different psychological problems and disorders."
   },
@@ -92,5 +92,9 @@
   "whatsapp": {
     "msg": "Hi, I'd like to book a session",
     "label": "Message me on WhatsApp"
+  },
+  "availability": {
+    "cta": "Book now",
+    "ctaLabel": "Book now, opens in a new tab"
   }
 }
