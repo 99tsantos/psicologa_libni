@@ -81,7 +81,22 @@
       "Payment by bank transfer only.",
       "Therapy sessions last 45 min - 1 hr",
       "From anywhere and from the comfort of your home, we can begin online therapy."
-    ]
+    ],
+    "form": {
+      "title": "Write to me",
+      "name": "Name",
+      "namePh": "Your name",
+      "email": "Email",
+      "emailPh": "you@email.com",
+      "preferred": "Preferred time (optional)",
+      "preferredPh": "E.g. Saturday mornings",
+      "message": "Message",
+      "messagePh": "Tell me how I can help",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Message sent! I'll reply soon.",
+      "errorServer": "Couldn't send. Try again or message me on WhatsApp."
+    }
   },
   "footer": {
     "whatsapp": "WhatsApp",

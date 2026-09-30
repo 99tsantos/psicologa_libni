@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Availability from "./Availability";
+import ContactForm from "./ContactForm";
 
 export default function ContactMe() {
   const t = useTranslations("contact");
@@ -17,6 +18,7 @@ export default function ContactMe() {
         <div className="w-full lg:w-1/2 flex flex-col items-center text-center">
           <Availability showNote showCta className="items-center text-center [&_ul]:items-center" />
         </div>
+        <ContactForm />
         <h2 className="text-2xl lg:text-4xl text-theme-foreground font-patrick mb-8 text-center">
           {footer[0]}
           <br />

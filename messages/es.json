@@ -81,7 +81,22 @@
       "Pago solamente por transferencia.",
       "Tiempo de terapia de 45 min - 1 hr",
       "Desde cualquier parte y a la comodidad de tu casa, podemos iniciar una terapia a distancia."
-    ]
+    ],
+    "form": {
+      "title": "Escríbeme",
+      "name": "Nombre",
+      "namePh": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPh": "tu@correo.com",
+      "preferred": "Horario preferido (opcional)",
+      "preferredPh": "Ej. sábados por la mañana",
+      "message": "Mensaje",
+      "messagePh": "Cuéntame en qué te puedo ayudar",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando…",
+      "success": "¡Mensaje enviado! Te responderé pronto.",
+      "errorServer": "No se pudo enviar. Inténtalo de nuevo o escríbeme por WhatsApp."
+    }
   },
   "footer": {
     "whatsapp": "WhatsApp",

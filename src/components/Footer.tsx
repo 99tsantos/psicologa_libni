@@ -85,7 +85,7 @@ export default function Footer() {
         </span>
       </a>
       <a
-        href="mailto:psicologalibnigonzalez@gmail.com"
+        href="#contact-me"
         aria-label={t("email")}
         onClick={() => track("email_click")}
         className="text-theme-foreground hover:opacity-70 transition-opacity"
