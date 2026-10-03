@@ -24,11 +24,21 @@
     "title": "Hola! Soy Libní González",
     "welcome": "Bienvenidos!",
     "intro": [
-      "Soy ",
-      "Psicóloga Clínica",
-      " desde 2022. Cuento con formación y acreditaciones académicas en Neuropsicología, obtenidas a través de diversos estudios, entre ellos una ",
-      "Maestría en Neurociencias Aplicadas a la Psicología",
-      " y varios diplomados internacionales en Neuropsicología. Esto me permite integrar un enfoque clínico y neurocientífico en mis intervenciones."
+      [
+        "Soy ",
+        "Psicóloga Clínica",
+        ", con experiencia profesional desde 2022 y formación especializada en el estudio de la mente, el comportamiento y el funcionamiento cerebral. Cuento con una ",
+        "Maestría en Neurociencias Aplicadas a la Psicología",
+        ", además de formación complementaria en Neuropsicología. Mi preparación me permite integrar la perspectiva psicológica con conocimientos provenientes de las neurociencias para comprender de manera más amplia cómo pensamos, sentimos, aprendemos y nos relacionamos."
+      ],
+      [
+        "Mi trabajo parte de un ",
+        "enfoque clínico, científico y basado en evidencia",
+        ", adaptando cada proceso a las necesidades y objetivos de la persona. Para mí, la atención psicológica no consiste únicamente en abordar una dificultad, sino también en comprenderla, desarrollar herramientas y favorecer cambios que puedan trasladarse a la vida cotidiana."
+      ],
+      [
+        "Mi objetivo es ofrecer un espacio profesional, respetuoso y cercano, en el que cada persona pueda comprender mejor lo que está viviendo y desarrollar recursos para afrontarlo de manera saludable."
+      ]
     ]
   },
   "services": {

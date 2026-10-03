@@ -2,9 +2,15 @@ import { useTranslations } from "next-intl";
 
 export default function Hero() {
   const t = useTranslations("hero");
-  const raw = t.raw("intro");
-  const intro =
-    Array.isArray(raw) && raw.length === 5 ? (raw as string[]) : null;
+  const raw = t.raw("intro") as unknown;
+
+  // Supports: string[][] (paragraphs with alternating plain/bold segments)
+  // and legacy flat string[] (single paragraph, odd indexes bold).
+  const paragraphs: string[][] | null = Array.isArray(raw)
+    ? Array.isArray((raw as unknown[])[0])
+      ? (raw as string[][])
+      : [raw as string[]]
+    : null;
   const introFallback = Array.isArray(raw)
     ? (raw as unknown[]).join("")
     : String(raw ?? "");
@@ -23,21 +29,24 @@ export default function Hero() {
           {t("title")}
         </h1>
         <div className="text-theme-foreground flex flex-col justify-normal gap-2 lg:gap-4">
-          <p className="text-md lg:text-2xl">
-            {t("welcome")}
-            <br />
-            {intro ? (
-              <>
-                {intro[0]}
-                <span className="font-bold">{intro[1]}</span>
-                {intro[2]}
-                <span className="font-bold">{intro[3]}</span>
-                {intro[4]}
-              </>
-            ) : (
-              introFallback
-            )}
-          </p>
+          <p className="text-md lg:text-2xl">{t("welcome")}</p>
+          {paragraphs ? (
+            paragraphs.map((para, pi) => (
+              <p key={pi} className="text-md lg:text-2xl">
+                {para.map((segment, si) =>
+                  si % 2 === 1 ? (
+                    <span key={si} className="font-bold">
+                      {segment}
+                    </span>
+                  ) : (
+                    <span key={si}>{segment}</span>
+                  ),
+                )}
+              </p>
+            ))
+          ) : (
+            <p className="text-md lg:text-2xl">{introFallback}</p>
+          )}
         </div>
       </div>
     </section>

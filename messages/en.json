@@ -24,11 +24,21 @@
     "title": "Hello! I am Libní González",
     "welcome": "Welcome!",
     "intro": [
-      "I am a ",
-      "Clinical Psychologist",
-      " since 2022. I have training and academic accreditations in Neuropsychology, gained through various studies, including a ",
-      "Master's in Neuroscience Applied to Psychology",
-      " and several international diplomas in Neuropsychology. This allows me to integrate a clinical and neuroscientific approach in my work."
+      [
+        "I am a ",
+        "Clinical Psychologist",
+        ", with professional experience since 2022 and specialized training in the study of the mind, behavior and brain functioning. I hold a ",
+        "Master's in Neuroscience Applied to Psychology",
+        ", along with additional training in Neuropsychology. My background allows me to integrate the psychological perspective with knowledge from neuroscience to better understand how we think, feel, learn and relate to others."
+      ],
+      [
+        "My work is grounded in a ",
+        "clinical, scientific and evidence-based approach",
+        ", adapting each process to the person's needs and goals. For me, psychological care is not only about addressing a difficulty, but also about understanding it, developing tools and fostering changes that can be carried into everyday life."
+      ],
+      [
+        "My goal is to offer a professional, respectful and welcoming space, where each person can better understand what they are experiencing and develop resources to cope with it in a healthy way."
+      ]
     ]
   },
   "services": {
