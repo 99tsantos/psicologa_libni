@@ -62,7 +62,7 @@ export default function Services() {
       <div className="bg-theme-muted px-8 xl:px-12 services-shadow">
         <div
           title={t("imageTitle")}
-          className="w-[16rem] h-[20rem] md:w-[20rem] md:h-[28rem] xl:w-[28rem] xl:h-[36rem] bg-[url('https://psychdegreestarter.com/wp-content/uploads/sites/8/2025/08/archereduas_Modern_therapists_office_with_symbolic_objects_an_A_64d0ffb0-8d12-4e92-afd7-2c721071a3f3-1024x408.jpg')] bg-cover bg-center"
+          className="w-[16rem] h-[20rem] md:w-[20rem] md:h-[28rem] xl:w-[28rem] xl:h-[36rem] bg-[url('/assets/services.png')] bg-cover bg-center"
         />
       </div>
     </section>

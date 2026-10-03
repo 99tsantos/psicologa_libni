@@ -20,7 +20,7 @@ export default function Sessions() {
       <div className="flex justify-center items-center about-shadow ">
         <div
           title={t("imageTitle")}
-          className="w-[16rem] h-[20rem] md:w-[20rem] md:h-[28rem] xl:w-[28rem] xl:h-[36rem] bg-[url('/assets/about-me.png')] bg-cover bg-center"
+          className="w-[16rem] h-[20rem] md:w-[20rem] md:h-[28rem] xl:w-[28rem] xl:h-[36rem] bg-[url('/assets/sessions.png')] bg-cover bg-center"
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8">
