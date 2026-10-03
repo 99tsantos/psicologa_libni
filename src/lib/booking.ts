@@ -9,4 +9,4 @@ export const SLOT_MINUTES = 75;
 export const BOOKING_TZ = "America/Guatemala";
 export const MEET_AUTO = false;
 
-export const BOOKING_URL = "";
+export const BOOKING_URL = "https://calendar.app.google/jrgDS5RanxJHUqZP8";
