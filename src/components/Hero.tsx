@@ -22,7 +22,11 @@ export default function Hero() {
     >
       <div
         title={t("imageTitle")}
-        className="w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] xl:w-[28rem] xl:h-[28rem] bg-[url('/assets/libnigonzalez.png')] bg-cover bg-center"
+        className="w-[16rem] h-[16rem] bg-[url('/assets/hero-mobile.png')] bg-cover bg-center mt-16 md:hidden"
+      />
+      <div
+        title={t("imageTitle")}
+        className="hidden md:block md:w-[20rem] md:h-[34rem] xl:w-[28rem] xl:h-[38rem] bg-[url('/assets/hero.png')] bg-cover bg-center mt-16"
       />
       <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8">
         <h1 className="text-4xl lg:text-7xl text-theme-foreground font-patrick">
