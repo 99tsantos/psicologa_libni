@@ -2,6 +2,13 @@ import { useTranslations } from "next-intl";
 
 export default function AboutMe() {
   const t = useTranslations("about");
+  const raw = t.raw("body") as unknown;
+
+  // Paragraphs with alternating plain/bold segments (odd indexes bold),
+  // same convention as the hero intro.
+  const paragraphs: string[][] | null = Array.isArray(raw)
+    ? (raw as string[][])
+    : null;
 
   return (
     <section
@@ -19,8 +26,19 @@ export default function AboutMe() {
           {t("title")}
         </h1>
         <div className="text-theme-foreground flex flex-col justify-normal gap-2 lg:gap-4">
-          <p className="text-md lg:text-2xl">{t("background")}</p>
-          <p className="text-md lg:text-2xl">{t("interest")}</p>
+          {paragraphs?.map((para, pi) => (
+            <p key={pi} className="text-md lg:text-2xl">
+              {para.map((segment, si) =>
+                si % 2 === 1 ? (
+                  <span key={si} className="font-bold">
+                    {segment}
+                  </span>
+                ) : (
+                  <span key={si}>{segment}</span>
+                ),
+              )}
+            </p>
+          ))}
         </div>
       </div>
     </section>

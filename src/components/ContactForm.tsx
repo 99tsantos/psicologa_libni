@@ -79,9 +79,6 @@ export default function ContactForm() {
       className="w-full lg:w-1/2 flex flex-col gap-4"
       noValidate
     >
-      <h2 className="text-2xl lg:text-4xl text-theme-foreground font-patrick text-center">
-        {t("title")}
-      </h2>
       <label className="flex flex-col gap-1 text-md lg:text-xl text-theme-foreground text-left">
         {t("name")}
         <input

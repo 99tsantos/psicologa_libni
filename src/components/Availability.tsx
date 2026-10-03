@@ -36,7 +36,9 @@ export default function Availability({ className = "" }: { className?: string })
           {t("saturday")}
         </li>
       </ul>
-      <p className="text-md lg:text-2xl mt-2 lg:mt-4">{t("note")}</p>
+      <p className="text-sm lg:text-lg italic opacity-80 mt-2 lg:mt-4">
+        {t("note")}
+      </p>
       <a
           href={href}
           {...(isLive

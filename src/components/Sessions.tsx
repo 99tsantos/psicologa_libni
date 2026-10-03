@@ -1,9 +1,16 @@
 import { useTranslations } from "next-intl";
-import CreditCardIcon from "./icons/CreditCardIcon";
 import Availability from "./Availability";
 
 export default function Sessions() {
   const t = useTranslations("sessions");
+  const bodyRaw = t.raw("body") as unknown;
+  const bodySegments: string[] | null = Array.isArray(bodyRaw)
+    ? (bodyRaw as string[])
+    : null;
+  const ratesRaw = t.raw("ratesNote") as unknown;
+  const ratesSegments: string[] | null = Array.isArray(ratesRaw)
+    ? (ratesRaw as string[])
+    : null;
 
   return (
     <section
@@ -21,48 +28,40 @@ export default function Sessions() {
           {t("title")}
         </h1>
         <div className="text-theme-foreground flex flex-col justify-normal gap-2 lg:gap-4">
-          <p className="text-md lg:text-2xl">{t("lead")}</p>
-          <p className="text-md lg:text-2xl">{t("body")}</p>
-          <div className="flex flex-col md:flex-row gap-6 lg:gap-8">
-            <Availability />
-            <div className="flex-1">
-              <h3 className="text-2xl lg:text-4xl font-patrick">{t("rates")}</h3>
-              <ul className="flex flex-col gap-1 lg:gap-2 mt-2 lg:mt-4">
-                <li className="text-md lg:text-2xl text-theme-foreground">
-                  <CreditCardIcon
-                    color="currentColor"
-                    aria-hidden="true"
-                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
-                  />
-                  {t("individual")}
-                </li>
-                <li className="text-md lg:text-2xl text-theme-foreground">
-                  <CreditCardIcon
-                    color="currentColor"
-                    aria-hidden="true"
-                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
-                  />
-                  {t("package4")}
-                </li>
-                <li className="text-md lg:text-2xl text-theme-foreground">
-                  <CreditCardIcon
-                    color="currentColor"
-                    aria-hidden="true"
-                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
-                  />
-                  {t("package6")}
-                </li>
-                <li className="text-md lg:text-2xl text-theme-foreground">
-                  <CreditCardIcon
-                    color="currentColor"
-                    aria-hidden="true"
-                    className="inline-block w-6 lg:w-8 h-6 lg:h-8 mr-1"
-                  />
-                  {t("package10")}
-                </li>
-              </ul>
-            </div>
+          {bodySegments ? (
+            <>
+              <p className="text-md lg:text-2xl">
+                <span className="font-bold">{bodySegments[0]}</span>
+              </p>
+              {bodySegments.slice(1).map((segment, i) => (
+                <p key={i} className="text-md lg:text-2xl">
+                  {segment}
+                </p>
+              ))}
+            </>
+          ) : (
+            <p className="text-md lg:text-2xl">{String(bodyRaw ?? "")}</p>
+          )}
+          <div className="text-sm lg:text-lg italic opacity-80">
+            <p className="font-bold">{t("ratesCta")}</p>
+            <p>
+              {ratesSegments ? (
+                <>
+                  {ratesSegments[0]}
+                  <a
+                    href="#contact-me"
+                    className="underline underline-offset-2 font-semibold hover:opacity-100"
+                  >
+                    {ratesSegments[1]}
+                  </a>
+                  {ratesSegments[2]}
+                </>
+              ) : (
+                String(ratesRaw ?? "")
+              )}
+            </p>
           </div>
+          <Availability />
         </div>
       </div>
     </section>

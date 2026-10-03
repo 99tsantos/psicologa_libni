@@ -8,7 +8,7 @@
     "services": "Services",
     "sessions": "Sessions",
     "about": "About me",
-    "contact": "Contact",
+    "contact": "Contact me",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu"
   },
@@ -67,33 +67,49 @@
   "sessions": {
     "title": "Sessions",
     "imageTitle": "Online sessions",
-    "lead": "Here is my session information:",
-    "body": "Each session is unique, just like you. My approach is fully personalized and focused on supporting you in achieving the goals you seek in therapy. I work with scientifically supported tools, integrating a multidisciplinary approach with cognitive-behavioral, neuropsychological, and humanistic foundations. Throughout the process, we will build a therapeutic plan together that lets us move step by step toward the goals set in the sessions.",
+    "body": [
+      "Each session is unique, just like you.",
+      " My approach is fully personalized and focused on supporting you in achieving the goals you seek in therapy. I work with scientifically supported tools, integrating a multidisciplinary approach with cognitive-behavioral, neuropsychological, and humanistic foundations. Throughout the process, we will build a therapeutic plan together that lets us move step by step toward the goals set in the sessions."
+    ],
+    "ratesCta": "Looking for an option that fits you?",
+    "ratesNote": [
+      "Ask about my individual sessions or available packages and get information about my current rates ",
+      "here",
+      "."
+    ],
     "hours": "Hours",
     "weekdays": "Monday to Thursday 4:00 to 8:00 PM (Guatemala time)",
     "saturday": "Saturdays 10:00 AM to 12:00 PM (subject to availability)",
-    "note": "Weekends only by prior arrangement. Please note that some time slots may already be booked.",
-    "rates": "Rates",
-    "individual": "Individual session: Q150.00 / USD 20.00",
-    "package4": "4-session package: Q550.00 / USD 75.00",
-    "package6": "6-session package: Q800.00 / USD 105.00",
-    "package10": "10-session package: Q1,200.00 / USD 155.00"
+    "note": "Weekends only by prior arrangement. Please note that some time slots may already be booked."
   },
   "about": {
     "title": "About me",
     "imageTitle": "Psychologist Libní González",
-    "background": "I consider myself a person who is always seeking knowledge and is passionate about understanding how different disciplines work. I have a deep interest in science and art, which regularly leads me to take part in activities that bring both fields together.",
-    "interest": "My main interest in psychology has always been the deep understanding and effective treatment of different psychological problems and disorders."
+    "body": [
+      [
+        "I consider myself a curious person, with a constant interest in learning, discovering and understanding how things work. I enjoy exploring different areas of knowledge and finding connections between them, especially between ",
+        "science, art and psychology",
+        "."
+      ],
+      [
+        "Science has been an important part of my education and of the way I understand the world, while art allows me to approach it from a different, more creative and human perspective. That is why I enjoy getting involved in activities that let me learn, experience and combine both forms of expression."
+      ],
+      [
+        "In psychology, my main interest has always been ",
+        "understanding people beyond their difficulties",
+        ", seeking to understand the processes that influence how we think, feel and act. This is also what has led me to take a deep interest in neuroscience and in a psychological practice grounded in scientific knowledge."
+      ],
+      [
+        "For me, continuing to learn is not only part of my profession, but also a way to grow personally and to keep alive my curiosity for understanding what I do not yet know."
+      ]
+    ]
   },
   "contact": {
-    "title": "Contact",
+    "title": "Start your process here",
     "footer": [
-      "Payment by bank transfer only.",
-      "Therapy sessions last 45 min - 1 hr",
       "From anywhere and from the comfort of your home, we can begin online therapy."
     ],
     "form": {
-      "title": "Write to me",
       "name": "Name",
       "namePh": "Your name",
       "email": "Email",

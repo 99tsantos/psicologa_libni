@@ -8,7 +8,7 @@
     "services": "Serviços",
     "sessions": "Sessões",
     "about": "Sobre mim",
-    "contact": "Contacto",
+    "contact": "Contacta-me",
     "openMenu": "Abrir menu de navegação",
     "closeMenu": "Fechar menu de navegação"
   },
@@ -67,33 +67,49 @@
   "sessions": {
     "title": "Sessões",
     "imageTitle": "Sessões online",
-    "lead": "Aqui está a minha informação sobre as sessões:",
-    "body": "Cada sessão é única, tal como tu. A minha abordagem é totalmente personalizada e orientada para te acompanhar no alcance dos objetivos que procuras na terapia. Trabalho com ferramentas com evidência científica, integrando uma abordagem multidisciplinar com bases cognitivo-comportamentais, neuropsicológicas e humanistas. Ao longo do processo, construiremos juntos um plano terapêutico que nos permita avançar passo a passo até ao cumprimento dos objetivos definidos nas sessões.",
+    "body": [
+      "Cada sessão é única, tal como tu.",
+      " A minha abordagem é totalmente personalizada e orientada para te acompanhar no alcance dos objetivos que procuras na terapia. Trabalho com ferramentas com evidência científica, integrando uma abordagem multidisciplinar com bases cognitivo-comportamentais, neuropsicológicas e humanistas. Ao longo do processo, construiremos juntos um plano terapêutico que nos permita avançar passo a passo até ao cumprimento dos objetivos definidos nas sessões."
+    ],
+    "ratesCta": "Procuras uma opção que se adapte a ti?",
+    "ratesNote": [
+      "Consulta as minhas sessões individuais ou pacotes disponíveis e recebe informações sobre as minhas tarifas em vigor ",
+      "aqui",
+      "."
+    ],
     "hours": "Horários",
     "weekdays": "Segunda a quinta, das 16:00 às 20:00 (hora da Guatemala)",
     "saturday": "Sábados, das 10:00 às 12:00 (mediante confirmação)",
-    "note": "Fins de semana apenas mediante coordenação prévia. Alguns horários podem já estar ocupados.",
-    "rates": "Tarifas",
-    "individual": "Sessão individual: Q150.00 / USD 20.00",
-    "package4": "Pacote de 4 sessões: Q550.00 / USD 75.00",
-    "package6": "Pacote de 6 sessões: Q800.00 / USD 105.00",
-    "package10": "Pacote de 10 sessões: Q1,200.00 / USD 155.00"
+    "note": "Fins de semana apenas mediante coordenação prévia. Alguns horários podem já estar ocupados."
   },
   "about": {
     "title": "Sobre mim",
     "imageTitle": "Psicóloga Libní González",
-    "background": "Considero-me uma pessoa em constante busca de conhecimento, apaixonada pelo processo de compreender o funcionamento de diferentes disciplinas. Tenho um profundo interesse por ciência e arte, o que me leva a participar regularmente em atividades que integram estes dois campos.",
-    "interest": "O meu principal interesse na área da psicologia sempre foi a compreensão profunda e o tratamento eficaz dos diversos problemas e perturbações psicológicas."
+    "body": [
+      [
+        "Considero-me uma pessoa curiosa, com um interesse constante em aprender, descobrir e compreender como as coisas funcionam. Gosto de explorar diferentes áreas do conhecimento e de encontrar ligações entre elas, especialmente entre ",
+        "a ciência, a arte e a psicologia",
+        "."
+      ],
+      [
+        "A ciência tem sido uma parte importante da minha formação e da minha forma de entender o mundo, enquanto a arte me permite aproximar-me dele a partir de uma perspetiva diferente, mais criativa e humana. Por isso, gosto de me envolver em atividades que me permitam conhecer, experimentar e combinar ambas as formas de expressão."
+      ],
+      [
+        "Na psicologia, o meu principal interesse sempre foi ",
+        "compreender as pessoas para além das suas dificuldades",
+        ", procurando entender os processos que influenciam a forma como pensamos, sentimos e agimos. Foi também isto que me levou a interessar-me profundamente pelas neurociências e por uma prática psicológica baseada no conhecimento científico."
+      ],
+      [
+        "Para mim, continuar a aprender não é apenas uma parte da minha profissão, mas também uma forma de crescer pessoalmente e de manter viva a curiosidade por compreender aquilo que ainda não conheço."
+      ]
+    ]
   },
   "contact": {
-    "title": "Contacto",
+    "title": "Inicia o teu processo aqui",
     "footer": [
-      "Pagamento apenas por transferência.",
-      "Tempo de terapia de 45 min - 1 h",
       "De qualquer parte e no conforto da tua casa, podemos começar uma terapia à distância."
     ],
     "form": {
-      "title": "Escreve-me",
       "name": "Nome",
       "namePh": "O teu nome",
       "email": "E-mail",
